@@ -26,8 +26,8 @@ for i in range(100):
             if BHT[BHT_index] != 0:
                 BHT[BHT_index] -= 1
 
-        history_queue.popleft()
-        history_queue.append(true_take[j])
+        history_queue.pop()
+        history_queue.appendleft(true_take[j])
 
     print("Round " + str(i) + ":")
     print("BHT:")
